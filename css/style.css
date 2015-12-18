@@ -19,18 +19,112 @@ h1 {
 /*===================================================================================
                             Navbar
 ===================================================================================*/
-.navbar-nav {
-    float: none;
-    background-color: #195BB2;
-    width: 100%;
+.btn {
+    border: 0px none;
+    border-radius: 300px;
+    text-transform: uppercase;
+    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
 }
-ul li {
-    font-size: 2em;
-    color : black;
-    padding: 2.355em;
+a:focus {
+    outline: 0;
 }
-nav li:hover {
-    background-color: #3E90FF;
+.navbar-inverse {
+    border-color: rgba(34, 34, 34, .05);
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #222;
+
+}
+.navbar-inverse .navbar-header .navbar-brand {
+    font-weight: 700;
+    color: #fff;
+    transition: all 1s ease 0.5s;
+}
+.navbar-inverse .navbar-header .navbar-brand:hover, .navbar-inverse .navbar-header .navbar-brand:focus {
+    animation: 1s multicolor;
+    -webkit-animation: 1s multicolor;
+}
+.navbar-inverse .nav > li>#acc, .navbar-inverse .nav>li>#acc:focus {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+}
+.navbar-inverse .nav > li>#acc:hover, .navbar-inverse .nav>li>#acc:focus:hover {
+    color: grey;
+    transition: all 0.45s ease 0s;
+}
+.navbar-inverse .nav > li>#bio, .navbar-inverse .nav>li>#bio:focus {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+}
+.navbar-inverse .nav > li>#bio:hover, .navbar-inverse .nav>li>#bio:focus:hover {
+    color: #B21908;
+    transition: all 0.45s ease 0s;
+}
+.navbar-inverse .nav > li>#show, .navbar-inverse .nav>li>#show:focus {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+}
+.navbar-inverse .nav > li>#show:hover, .navbar-inverse .nav>li>#show:focus:hover {
+    color: #B21908;
+    transition: all 0.45s ease 0s;
+}
+.navbar-inverse .nav > li>#media, .navbar-inverse .nav>li>#media:focus {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+}
+.navbar-inverse .nav > li>#media:hover, .navbar-inverse .nav>li>#media:focus:hover {
+    color: #B21908;
+    transition: all 0.45s ease 0s;
+}
+.navbar-inverse .nav > li>#contact, .navbar-inverse .nav>li>#contact:focus {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+}
+.navbar-inverse .nav > li>#contact:hover, .navbar-inverse .nav>li>#contact:focus:hover {
+    color: grey;
+    transition: all 0.45s ease 0s;
+}
+.navbar-inverse .nav > li>#bio:hover, .navbar-inverse .nav>li>#bio:focus:hover {
+    color: #B21908;
+}
+.navbar-inverse .nav > li.active>#bio, .navbar-inverse .nav>li.active>#bio:focus {
+    color: #B21908!important;
+    background-color: transparent;
+    transition: all 0.45s ease 0s;
+}
+.navbar-inverse .nav > li>#show:hover, .navbar-inverse .nav>li>#show:focus:hover {
+    color: #B21908;
+}
+.navbar-inverse .nav > li.active>#show, .navbar-inverse .nav>li.active>#show:focus {
+    color: #B21908!important;
+    background-color: transparent;
+    transition: all 0.55s ease 0s;
+}
+.navbar-inverse .nav > li>#media:hover, .navbar-inverse .nav>li>#media:focus:hover {
+    color: #B21908;
+}
+.navbar-inverse .nav > li.active>#media, .navbar-inverse .nav>li.active>#media:focus {
+    color: #B21908!important;
+    background-color: transparent;
+    transition: all 0.45s ease 0s;
+}
+.navbar-inverse .nav > li>#contact:hover, .navbar-inverse .nav>li>#contact:focus:hover {
+    color: grey;
+}
+.navbar-inverse .nav > li.active>#contact, .navbar-inverse .nav>li.active>#contact:focus {
+    color: grey !important;
+    background-color: transparent;
+    transition: all 0.45s ease 0s;
 }
 /*===================================================================================
                             footer
@@ -51,4 +145,10 @@ footer {
     font-size: 20px;
     line-height: 50px;
     margin-top: -24px;
+}
+/*===================================================================================
+                            body
+===================================================================================*/
+#logoville {
+     	transform-origin: 45
 }
