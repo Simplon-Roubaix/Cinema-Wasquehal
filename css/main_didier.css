@@ -7,4 +7,23 @@
     height: 100px;
     width: auto;
 }*/
-jumbotron p{ font-size: 0.8em;}
+.jumboMaison {
+  position: relative;
+  font-size: 1em;
+  height: 32em;
+  width: auto;
+  background-color: ligthgray;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #eee;
+  border-radius: 0.4em;
+}
+article#film1 .jumbotron  {padding-left: 0 !important;}
+.jumbotron p {font-size: 1.5em;}
+
+.container-fluid#film1 .jumbotron {
+	padding-right: 60px;
+	padding-left: 0;
+}
