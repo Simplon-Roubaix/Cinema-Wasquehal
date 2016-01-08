@@ -161,8 +161,8 @@ footer {
 ===================================================================================*/
 
 .logoville {
-    margin-left: -63%;
-    padding-top: 114px;
+    left: 10px;
+    top: 114px;
     width: 196px;
     height: 518px;
     position: fixed;
