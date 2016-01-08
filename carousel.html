@@ -39,16 +39,16 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="presentation.html" id="acc" class="page-scroll navtxt">Présentation</a>
+                        <a href="#page-top" id="acc" class="page-scroll navtxt">Présentation</a>
                     </li>
                     <li>
-                        <a href="films.html" id="bio" class="page-scroll navtxt">A l'affiche</a>
+                        <a href="#mdi1" id="bio" class="page-scroll navtxt">A l'affiche</a>
                     </li>
                     <li>
-                        <a href="reservation.html" id="show" class="page-scroll navtxt">Réservation</a>
+                        <a href="#mdi2" id="show" class="page-scroll navtxt">Réservation</a>
                     </li>
                     <li>
-                        <a href="evenements.html" id="media" class="page-scroll navtxt">Evénements</a>
+                        <a href="#mdi3" id="media" class="page-scroll navtxt">Evénements</a>
                     </li>
                 </ul>
             </div>
@@ -61,13 +61,27 @@
 </header>
 
     <section class="container">
+        <!-- carousel entrer -->
+        <article class="row">
+<div id ="waterwheel-carousel">
+<div class="col-xs-12 col-sm-9 col-md-9 col-lg-7 col-lg-offset-1">
+    <img src="img/affiche1.jpg" alt=""/>
+    <img src="img/affiche2.jpg" alt=""/>
+    <img src="img/affiche3.jpg" alt=""/>
+    <img src="img/affiche4.jpg" alt=""/>
+    <img src="img/affiche5.jpg" alt=""/>
+    <img src="img/affiche6.jpg" alt=""/>
+</div>
+</div>
+</article>
+        <!-- carousel fin -->
         <article class="row">
             <div class="hidden-xs hidden-sm col-md-2 col-lg-2">
                 <img id="logowasq" src="img/logoville.png" alt="logo ville Wasquehal" class="logoville img-responsive " />
             </div>
             <article class="row">
                                         <!-- début jumbotron -->
-            <div class="jumbotron col-xs-12 col-sm-9 col-md-9 col-lg-6 ">
+            <div class="jumbotron col-xs-12 col-sm-9 col-md-9 col-lg-7 ">
                 <h3>Bienvenue sur le site du cinéma de la ville de Wasquehal</h3>
                 <p>Sur ce site, vous pourrez consulter le programme des films ainsi que leurs fiches descriptives, réserver vos places et prendre connaissance des événements passés et à venir.</p>
                 <p>Bonne navigation !</p>
@@ -105,11 +119,8 @@
                             <i class="fa fa-chevron-down"></i>
 <h3><span class="icon-dashboard"></span>Réservation</h3>
                         <ul class="accordiancontent">
-                            <li>Vous pouvez réserver vos places <a href="#" title = "Réservation"><strong><em>ici</em></strong></a></li>
+                            <li>Vous pouvez réserver vos places <a href="#" title = "Réservation"><em>ici</em></a></li>
                         </ul>
-                    </li>
-                    </ul>
-                    </div>
             </aside>
             <!-- fin aside -->
             </article>
@@ -143,9 +154,23 @@
         window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')
     </script>
     <script src="js/bootstrap.js"></script>
+    <!-- script carousel js -->
+    <script type="text/javascript" src="js/jquery.waterwheelCarousel.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
+    <!-- < script carousel -->
+        <script>
+        $(document).ready(function () {
+          $("#waterwheel-carousel").waterwheelCarousel({
+            horizon: 110,
+            horizonOffset: -50,
+            horizonOffsetMultiplier: .7,
+            separation: 150,
+            edgeFadeEnabled: true
+        });
+        });
+        </script>
+        <!-- fin script carousel -->
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
         (function(b, o, i, l, e, r) {
