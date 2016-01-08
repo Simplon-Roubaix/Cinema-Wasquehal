@@ -161,7 +161,11 @@ footer {
 ===================================================================================*/
 
 .logoville {
+    margin-left: -15%;
     padding-top: 114px;
+    width: 196px;
+    height: 518px;
+    position: sticky;
 }
 .jumbotron {
     padding-top: 20px;
