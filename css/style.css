@@ -161,13 +161,29 @@ footer {
 ===================================================================================*/
 
 .logoville {
-    margin-left: -15%;
-    padding-top: 114px;
+    left: 10px;
+    top: 114px;
     width: 196px;
     height: 518px;
-    position: sticky;
+    position: fixed;
 }
 .jumbotron {
     padding-top: 20px;
     margin-top: 110px;
+    display: inline-block;
+}
+/*===================================================================================
+                            aside
+===================================================================================*/
+.rightSideInfo {
+    float: right;
+    display: inline-block;
+    margin-top: 200px;
+    position : fixed;
+    border: 1px solid grey;
+    background-color: #EEE;
+}
+#imgCineIndoor {
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
