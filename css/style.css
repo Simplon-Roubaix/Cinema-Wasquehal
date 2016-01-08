@@ -134,6 +134,22 @@ a:focus {
     transition: all 0.45s ease 0s;
 }
 
+/*=============================================================================
+                                        Carousel
+=============================================================================*/
+ #waterwheel-carousel {
+     width: auto;
+     margin:0;
+    /*width: 200px;
+    height: 150px;*/
+    display: relative;
+  }
+  #waterwheel-carousel img {
+    display: hidden; /* hide images until carousel prepares them */
+    cursor: pointer; /* not needed if you wrap carousel items in links */*/
+  }
+
+
 /*===================================================================================
                             footer
 ===================================================================================*/
