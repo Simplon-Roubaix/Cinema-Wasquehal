@@ -155,7 +155,8 @@ a:focus {
 ===================================================================================*/
 
 footer {
-    background-color: grey;
+    background-color: black;
+    color: white;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -196,10 +197,27 @@ footer {
     display: inline-block;
     margin-top: 200px;
     position : fixed;
-    border: 1px solid grey;
+    border-radius: 6px;
     background-color: #EEE;
 }
 #imgCineIndoor {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     padding-top: 10px;
+}
+
+.accordiancontent {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    font-size: 1.5em;
+}
+#accordian li {
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+#accordian h3 {
+    padding-top: 15px;
+    padding-bottom: 3px;
+    text-align: center;
+    border-top: 1px solid #C7C7C7;
 }
