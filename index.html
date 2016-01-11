@@ -17,48 +17,49 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
+
 <body>
-<header>
-                                <!-- début navbar -->
-    <nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="index.html">
-                    <h1>Cinéma Gérard Philippe</h1>
-                </a>
+    <header>
+        <!-- début navbar -->
+        <nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="index.html">
+                        <h1>Cinéma Gérard Philippe</h1>
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="presentation.html" id="presentation" class="page-scroll navtxt">Présentation</a>
+                        </li>
+                        <li>
+                            <a href="films.html" id="filmsaff" class="page-scroll navtxt">A l'affiche</a>
+                        </li>
+                        <li>
+                            <a href="reservation.html" id="resa" class="page-scroll navtxt">Réservation</a>
+                        </li>
+                        <li>
+                            <a href="evenements.html" id="events" class="page-scroll navtxt">Evénements</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- fin navbar -->
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="presentation.html" id="acc" class="page-scroll navtxt">Présentation</a>
-                    </li>
-                    <li>
-                        <a href="films.html" id="bio" class="page-scroll navtxt">A l'affiche</a>
-                    </li>
-                    <li>
-                        <a href="reservation.html" id="show" class="page-scroll navtxt">Réservation</a>
-                    </li>
-                    <li>
-                        <a href="evenements.html" id="media" class="page-scroll navtxt">Evénements</a>
-                    </li>
-                </ul>
-            </div>
-                                    <!-- fin navbar -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+            <!-- /.container-fluid -->
+        </nav>
 
 
-</header>
+    </header>
 
     <section class="container">
         <article class="row">
@@ -66,52 +67,61 @@
                 <img id="logowasq" src="img/logoville.png" alt="logo ville Wasquehal" class="logoville img-responsive " />
             </div>
             <article class="row">
-                                        <!-- début jumbotron -->
-            <div class="jumbotron col-xs-12 col-sm-9 col-md-9 col-lg-6 ">
-                <h3>Bienvenue sur le site du cinéma de la ville de Wasquehal</h3>
-                <p>Sur ce site, vous pourrez consulter le programme des films ainsi que leurs fiches descriptives, réserver vos places et prendre connaissance des événements passés et à venir.</p>
-                <p>Bonne navigation !</p>
-                <p>
-                    <em>Toute l'équipe du cinéma</em>
-                </p>
-            </div>
-                                        <!-- fin jumbotron -->
-            <!-- début aside avec menu accordéon -->
-            <aside class="rightSideInfo hidden-xs hidden-sm col-md-9 col-lg-3 col-lg-offset-1">
-                <center>
-                    <img id="imgCineIndoor" src="img/cinema01_medium.jpg" alt="image intérieur cinema" />
-                </center>
-                <div id="accordian">
-                    <ul>
-                        <li>
-                            <i class="fa fa-chevron-down"></i>
-<h3><span class="icon-dashboard"></span>Tarifs</h3>
-                            <ul class="accordiancontent">
-                                <li>Tarif plein : 5€</li>
-                                <li>Tarif réduit * : 4€</li>
-                                <li>Carte d'abonnement enfant : 30€ (10 entrées valables un an de date à date)</li>
-                                <li>Carte d'abonnement adulte : 40€ (10 entrées valables un an de date à date)</li>
-                                <li>Tarif groupe (enfants et adulte) sur demande.</li>
-                                <li>* Moins de 16 ans et collégiens, lycéens, étudiants, demandeurs d'emploi, familles nombreuses, plus de 60 ans (sur justificatif nominatif en cours de validité)</li>
-                            </ul>
-                            <i class="fa fa-chevron-down"></i>
-<h3><span class="icon-dashboard"></span>Contact</h3>
-                            <ul class="accordiancontent">
-                                <li>Benjamin Salin</li>
-                                <li>22, rue Louis Lejeune</li>
-                                <li>59290 Wasquehal</li>
-                                <li>Tél.: 03.20.01.08.20</li>
-                            </ul>
-                            <i class="fa fa-chevron-down"></i>
-<h3><span class="icon-dashboard"></span>Réservation</h3>
-                        <ul class="accordiancontent">
-                            <li>Vous pouvez réserver vos places <a href="#" title = "Réservation"><strong><em>ici</em></strong></a></li>
+                <!-- début jumbotron -->
+                <div class="jumbotron col-xs-12 col-sm-9 col-md-9 col-lg-6 ">
+                    <h3>Bienvenue sur le site du cinéma de la ville de Wasquehal</h3>
+                    <p>Sur ce site, vous pourrez consulter le programme des films ainsi que leurs fiches descriptives, réserver vos places et prendre connaissance des événements passés et à venir.</p>
+                    <p>Bonne navigation !</p>
+                    <p>
+                        <em>Toute l'équipe du cinéma</em>
+                    </p>
+                </div>
+                <!-- fin jumbotron -->
+                <!-- début aside avec menu accordéon -->
+                <aside class="rightSideInfo hidden-xs hidden-sm col-md-9 col-lg-3 col-lg-offset-1">
+                    <center>
+                        <img id="imgCineIndoor" src="img/cinema01_medium.jpg" alt="image intérieur cinema" />
+                    </center>
+                    <div id="accordian">
+                        <ul>
+                            <li>
+                                <i class="fa fa-chevron-down"></i>
+                                <h3>
+                                    <span class="icon-dashboard"></span>Tarifs</h3>
+                                <ul class="accordiancontent">
+                                    <li>Tarif plein : 5€</li>
+                                    <li>Tarif réduit * : 4€</li>
+                                    <li>Carte d'abonnement enfant : 30€ (10 entrées valables un an de date à date)</li>
+                                    <li>Carte d'abonnement adulte : 40€ (10 entrées valables un an de date à date)</li>
+                                    <li>Tarif groupe (enfants et adulte) sur demande.</li>
+                                    <li>* Moins de 16 ans et collégiens, lycéens, étudiants, demandeurs d'emploi, familles nombreuses, plus de 60 ans (sur justificatif nominatif en cours de validité)</li>
+                                </ul>
+                                <i class="fa fa-chevron-down"></i>
+                                <h3>
+                                    <span class="icon-dashboard"></span>Contact</h3>
+                                <ul class="accordiancontent">
+                                    <li>Benjamin Salin</li>
+                                    <li>22, rue Louis Lejeune</li>
+                                    <li>59290 Wasquehal</li>
+                                    <li>Tél.: 03.20.01.08.20</li>
+                                </ul>
+                                <i class="fa fa-chevron-down"></i>
+                                <h3>
+                                    <span class="icon-dashboard"></span>Réservation</h3>
+                                <ul class="accordiancontent">
+                                    <li>Vous pouvez réserver vos places
+                                        <a href="#" title="Réservation">
+                                            <strong>
+                                                <em>ici</em>
+                                            </strong>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                    </ul>
                     </div>
-            </aside>
-            <!-- fin aside -->
+                </aside>
+                <!-- fin aside -->
             </article>
         </article>
 
