@@ -12,6 +12,7 @@
 // 	})
 // })
 //Fin menu accordéon
+
 //New accordion
 $('.toggle').click(function(e) {
   	e.preventDefault();
