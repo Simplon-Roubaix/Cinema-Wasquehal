@@ -15,3 +15,17 @@ $('.toggle').click(function(e) {
     }
 });
 //end new accordion
+//start carrousel
+$(document).ready(function () {
+   $("#waterwheel-carousel").waterwheelCarousel({
+       autoPlay : 1500,
+       horizonOffset: -50,
+       horizonOffsetMultiplier: 1,
+       linkHandling: 2,
+       separation: 200,
+       activeClassName: "carousel-center",
+       opacityMultiplier: 1,
+       edgeFadeEnabled: true
+   });
+});
+//end of carrousel

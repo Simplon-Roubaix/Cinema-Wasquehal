@@ -58,25 +58,43 @@
             <!-- /.container-fluid -->
         </nav>
     </header>
-
     <section class="container">
         <article class="row">
             <div class="hidden-xs hidden-sm col-md-2 col-lg-2">
                 <img id="logowasq" src="img/logoville.png" alt="logo ville Wasquehal" class="logoville img-responsive " />
             </div>
             <article class="row">
-                <!-- début jumbotron -->
-                <div class="jumbotron col-xs-12 col-sm-9 col-md-9 col-lg-6 ">
-                    <h3>Bienvenue sur le site du cinéma de la ville de Wasquehal</h3>
-                    <p>Sur ce site, vous pourrez consulter le programme des films ainsi que leurs fiches descriptives, réserver vos places et prendre connaissance des événements passés et à venir.</p>
-                    <p>Bonne navigation !</p>
-                    <p>
-                        <em>Toute l'équipe du cinéma</em>
-                    </p>
+                <div class="hidden-xs hidden-sm col-md-6 col-lg-6">
+                    <ul id="waterwheel-carousel">
+                        <li>
+                            <a href="films.html">
+                                <img src="img/affiche1.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="evenements.html">
+                                <img src="img/affiche2.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pratique.html">
+                                <img src="img/affiche3.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="presentation.html">
+                                <img src="img/affiche4.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="reservation.html">
+                                <img src="img/affiche5.jpg" alt="" />
+                            </a>
+                        </li>
+                        <!-- <img src="img/affiche6.jpg" alt=""/> -->
+                    </ul>
                 </div>
-                <!-- fin jumbotron -->
-                <!-- début aside avec menu accordéon -->
-                <aside class="rightSideInfo hidden-xs hidden-sm col-md-9 col-lg-3">
+                <aside class="rightSideInfo hidden-xs hidden-sm col-md-9 col-lg-3 ">
                     <center>
                         <img id="imgCineIndoor" src="img/cinema01_medium.jpg" alt="image intérieur cinema" />
                     </center>
@@ -109,9 +127,7 @@
                             <ul class="inner">
                                 <li>Vous pouvez réserver vos places
                                     <a href="reservation.html" title="Réservation">
-                                        <strong>
-                                            <em>ici</em>
-                                        </strong>
+                                        <em>ici</em>
                                     </a>
                                 </li>
                         </li>
@@ -119,25 +135,42 @@
                     </ul>
                     <!-- fin accordion -->
                 </aside>
-                <!-- fin aside -->
+            </article>
+            <article class="row">
+                <!-- <div class="hidden-xs hidden-sm col-md-2 col-lg-2">
+                <img id="logowasq" src="img/logoville.png" alt="logo ville Wasquehal" class="logoville img-responsive " />
+            </div> -->
+                <article class="row">
+                    <div class="col-md-2 col-lg-2">
+
+                    </div>
+                    <!-- début jumbotron -->
+                    <div class="jumbotron col-xs-12 col-sm-9 col-md-9 col-lg-8">
+                        <h3>Bienvenue sur le site du cinéma de la ville de Wasquehal</h3>
+                        <p>Sur ce site, vous pourrez consulter le programme des films ainsi que leurs fiches descriptives, réserver vos places et prendre connaissance des événements passés et à venir.</p>
+                        <p>Bonne navigation !</p>
+                        <p>
+                            <em>Toute l'équipe du cinéma</em>
+                        </p>
+                    </div>
+                </article>
             </article>
         </article>
-
     </section>
     <footer id="mdi4" class="text-center">
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                    <div class="footerlinks footer-col col-xs-12 col-sm-12 col-md-4 col-lg-3">
                         <h5><a href="#">Mentions légales</a></h5>
                     </div>
-                    <div class="footer-col col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                    <div class="footerlinks footer-col col-xs-12 col-sm-12 col-md-4 col-lg-3">
                         <h5> <a href="#">Conditions générales</a></h5>
                     </div>
-                    <div class="footer-col col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                    <div class="footerlinks footer-col col-xs-12 col-sm-12 col-md-4 col-lg-3">
                         <h5><a href="https://fr-fr.facebook.com/cinemawasquehal.gerardphilipe" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a></h5>
                     </div>
-                    <div class="footer-col col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                    <div class="footerlinks footer-col col-xs-12 col-sm-12 col-md-4 col-lg-3">
                         <h5><a href="http://www.ville-wasquehal.fr/">Mairie de Wasquehal</a></h5>
                     </div>
                 </div>
@@ -151,6 +184,7 @@
         window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')
     </script>
     <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.waterwheelCarousel.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
