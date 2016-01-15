@@ -30,3 +30,6 @@ $('.toggle').click(function(e) {
     }
 });
 //end new accordion
+
+
+// mise en place datetimepicker
