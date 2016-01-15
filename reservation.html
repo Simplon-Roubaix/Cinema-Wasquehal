@@ -20,50 +20,48 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-<header>
+  <header>
+      <!-- début navbar -->
+      <nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand page-scroll" href="index.html">
+                      <h1>Cinéma Gérard Philippe</h1>
+                  </a>
+              </div>
 
-    <nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <h1><a href="index.html">Cinéma Gérard Philippe</a></h1>
-                </a>
-            </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                      <li>
+                          <a href="presentation.html" id="presentation" class="page-scroll navtxt">Présentation</a>
+                      </li>
+                      <li>
+                          <a href="films.html" id="filmsaff" class="page-scroll navtxt">A l'affiche</a>
+                      </li>
+                      <li>
+                          <a href="reservation.html" id="resa" class="page-scroll navtxt">Réservation</a>
+                      </li>
+                      <li>
+                          <a href="evenements.html" id="events" class="page-scroll navtxt">Evénements</a>
+                      </li>
+                  </ul>
+              </div>
+              <!-- fin navbar -->
+          </div>
+          <!-- /.container-fluid -->
+      </nav>
+  </header>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#page-top" id="acc" class="page-scroll navtxt">Présentation</a>
-                    </li>
-                    <li>
-                        <a href="#mdi1" id="bio" class="page-scroll navtxt">A l'affiche</a>
-                    </li>
-                    <li>
-                        <a href="#mdi2" id="show" class="page-scroll navtxt">Réservation</a>
-                    </li>
-                    <li>
-                        <a href="#mdi3" id="media" class="page-scroll navtxt">Evénements</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-
-</header>
 
   <section class="row">
-
 
 
 
@@ -71,18 +69,86 @@
 <!--starting to write accordion here -->
 
 
+<!--------------------début du formulaire----------------------------------------------------------------->
 
 
-<select id="formulaire">
-	<option value="">Select one...</option>
-	<option value="Breakfast">Breakfast</option>
-	<option value="Brunch">Brunch</option>
-	<option value="Lunch">Lunch</option>
-	<option value="Afternoon Tea">Afternoon Tea</option>
-	<option value="Dinner">Dinner</option>
-	<option value="Midnight Snack">Midnight Snack</option>
-	<option value="I do not know">I do not know</option>
-</select>
+<form class="form-horizontal col-lg-10 col-lg-offset-2">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Réservation</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Nom</label>
+  <div class="col-md-4">
+  <input id="Nom" name="textinput" placeholder="indiquez votre nom" class="form-control input-md" type="text">
+  <span class="help-block"></span>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Prénom</label>
+  <div class="col-md-4">
+  <input id="prenom" name="textinput" placeholder="indiquez votre prénom" class="form-control input-md" type="text">
+  <span class="help-block"></span>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectbasic">Choix du film</label>
+  <div class="col-md-4">
+    <select id="choixFilm" name="selectbasic" class="form-control">
+      <option value="1">Film 1</option>
+      <option value="2">Film 2</option>
+      <option value="3">Film 3</option>
+      <option value="4">Film 4</option>
+      <option value="5">Film 5</option>
+
+    </select>
+  </div>
+</div>
+
+<!-- choix seance, à utiliser un jquerry datetimepicker-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Séance</label>
+  <div class="col-md-4">
+  <input id="choixSeance" name="textinput" placeholder="choix de la séance" class="form-control input-md" type="text">
+  <span class="help-block"></span>
+  </div>
+</div>
+
+<!-- nbre places -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectbasic">Nombre de place(s)</label>
+  <div class="col-md-4">
+    <select id="nbrePlace" name="selectbasic" class="form-control">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select>
+      <p>A partir de 10 places pensez à prendre contact pour des tarifs de groupes</p>
+  </div>
+</div>
+
+<!-- Button validation-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton"></label>
+  <div class="col-md-4">
+    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Je valide</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
 
 
 
