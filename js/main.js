@@ -1,18 +1,3 @@
-//Menu accordéon
-// $(document).ready(function(){
-// 	$("#accordian h3").click(function(){
-//
-// 		//slide up all the link lists
-// 		$("#accordian ul ul").slideUp();
-// 		//slide down the link list below the h3 clicked - only if its closed
-// 		if(!$(this).next().is(":visible"))
-// 		{
-// 			$(this).next().slideDown();
-// 		}
-// 	})
-// })
-//Fin menu accordéon
-
 //New accordion
 $('.toggle').click(function(e) {
   	e.preventDefault();
@@ -30,3 +15,17 @@ $('.toggle').click(function(e) {
     }
 });
 //end new accordion
+//start carrousel
+$(document).ready(function () {
+   $("#waterwheel-carousel").waterwheelCarousel({
+       autoPlay : 1500,
+       horizonOffset: -50,
+       horizonOffsetMultiplier: 1,
+       linkHandling: 2,
+       separation: 200,
+       activeClassName: "carousel-center",
+       opacityMultiplier: 1,
+       edgeFadeEnabled: true
+   });
+});
+//end of carrousel
