@@ -142,6 +142,7 @@ a:focus {
                                         Carousel
 =============================================================================*/
 
+
 #waterwheel-carousel {
     /*width: auto;
      margin:0;
@@ -155,14 +156,23 @@ a:focus {
     /*overflow:hidSden;*/
     margin: 0 auto;
 }
-#waterwheel-carousel img {
-    display: hidden;
-    /* hide images until carousel prepares them */
-    /*cursor: pointer; /* not needed if you wrap carousel items in links */
-    width: 400px;
-    height: 300px;
-    margin-top: 100px;
+
+ #waterwheel-carousel {
+width: 800px ;
+height: 420px;
+display: relative;
+margin-left: auto;
+margin-right: auto;
 }
+
+#waterwheel-carousel img {
+width: 300px;
+height: 400px;
+display: hidden; /* hide images until carousel prepares them */
+cursor: pointer; /* not needed if you wrap carousel items in links */
+margin-top: 200px;
+}
+
 
 /*===================================================================================
                             footer
