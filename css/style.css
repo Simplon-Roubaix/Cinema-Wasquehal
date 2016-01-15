@@ -225,7 +225,7 @@ footer h5 a:hover{
     padding-top: 10px;
 }
 .accordion li {
-    margin-left: 5px;
+    margin-left: -38px;
 }
 .description {
     margin: 1em auto 2.25em;
@@ -234,9 +234,6 @@ footer h5 a:hover{
     padding-left: 1em;
     overflow: hidden;
     display: none;
-}
-.show {
-    /*display: block;*/
 }
 li {
     margin: .5em 0;
