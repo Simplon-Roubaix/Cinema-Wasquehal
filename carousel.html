@@ -162,13 +162,29 @@
         <script>
      $(document).ready(function () {
         $("#waterwheel-carousel").waterwheelCarousel({
+            integer: -5,
             horizon: 100,
             horizonOffset: -50,
             horizonOffsetMultiplier: .7,
             separation: 200,
-            edgeFadeEnabled: true,
-            });
-            });
+            edgeFadeEnabled: true
+        });
+    });
+        // {
+        //     clickedCenter: function($clickedItem) {
+        //       // $clickedItem is a jQuery wrapped object describing the image that was clicked.
+        //       var imageUrl = $clickedItem.attr('src');
+        //       alert('The center image was just clicked. The URL of the image is: ' + imageUrl);
+        //   }},{
+        //     movedToCenter: function($newCenterItem) {
+        //       // $newCenterItem is a jQuery wrapped object describing the image that was clicked.
+        //       var imageID = $newCenterItem.attr('id'); // Get the HTML element "id" for this image. Let's say it's "tigerpicture"
+        //       // Now that we have the ID of the image, we can use jQuery to show the content corresponding to the tigerpicture.
+        //       $('#'+imageID+'-information').show(); // this will show the HTML element with id of "tigerpicture-information" on your site.
+        // }
+        //     }
+
+
 
   //       $(function(){
   //    setInterval(function(){

@@ -138,28 +138,42 @@ a:focus {
                                         Carousel
 =============================================================================*/
  #waterwheel-carousel {
-     /*width: auto;
-     margin:0;
+width: 800px ;
+height: 300px;
+display: relative;
+margin-left: auto;
+margin-right: auto;
+}
+
+#waterwheel-carousel img {
+width: 300px;
+height: 400px;
+display: hidden; /* hide images until carousel prepares them */
+cursor: pointer; /* not needed if you wrap carousel items in links */
+margin-top: 150px;
+}
+    /*width: auto;*/
+    /*margin: 0;*/
     /*width: 200px;
-    height: 150px;*/
-    /*display: relative;*/
+    height: 150px;
+    display: relative;*/
 
 
-  width:200px;
-  height:300px;
-  position:relative;
-  clear:both;
-  /*overflow:hidSden;*/
-  margin:0 auto;
+  /*width:200px;
+  height:300px;*/
+  /*position:relative;*/
+  /*clear:both;*/
+  /*overflow:hidden;*/
+  /*margin:0 auto;*/
 
-  }
-  #waterwheel-carousel img {
-    display: hidden; /* hide images until carousel prepares them */
+  /*}*/
+  /*#waterwheel-carousel img {*/
+    /*display: hidden; /* hide images until carousel prepares them */*/
     /*cursor: pointer; /* not needed if you wrap carousel items in links */*/
-    width: 400px;
-    height: 300px;
-    margin-top: 100px;
-  }
+    /*width: 400px;*/
+    /*height: 300px;*/
+    /*margin-top: 100px;*/
+  /*}*/
 
 
 /*===================================================================================
