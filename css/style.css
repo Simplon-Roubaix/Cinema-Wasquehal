@@ -51,43 +51,43 @@ a:focus {
     animation: 1s multicolor;
     -webkit-animation: 1s multicolor;
 }
-.navbar-inverse .nav > li>#acc, .navbar-inverse .nav>li>#acc:focus {
+.navbar-inverse .nav > li>#presentation, .navbar-inverse .nav>li>#presentation:focus {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
     color: #fff;
 }
-.navbar-inverse .nav > li>#acc:hover, .navbar-inverse .nav>li>#acc:focus:hover {
+.navbar-inverse .nav > li>#presentation:hover, .navbar-inverse .nav>li>#presentation:focus:hover {
     color: #B21908;
     transition: all 0.45s ease 0s;
 }
-.navbar-inverse .nav > li>#bio, .navbar-inverse .nav>li>#bio:focus {
+.navbar-inverse .nav > li>#filmsaff, .navbar-inverse .nav>li>#filmsaff:focus {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
     color: #fff;
 }
-.navbar-inverse .nav > li>#bio:hover, .navbar-inverse .nav>li>#bio:focus:hover {
+.navbar-inverse .nav > li>#filmsaff:hover, .navbar-inverse .nav>li>#filmsaff:focus:hover {
     color: #B21908;
     transition: all 0.45s ease 0s;
 }
-.navbar-inverse .nav > li>#show, .navbar-inverse .nav>li>#show:focus {
+.navbar-inverse .nav > li>#resa, .navbar-inverse .nav>li>#resa:focus {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
     color: #fff;
 }
-.navbar-inverse .nav > li>#show:hover, .navbar-inverse .nav>li>#show:focus:hover {
+.navbar-inverse .nav > li>#resa:hover, .navbar-inverse .nav>li>#resa:focus:hover {
     color: #B21908;
     transition: all 0.45s ease 0s;
 }
-.navbar-inverse .nav > li>#media, .navbar-inverse .nav>li>#media:focus {
+.navbar-inverse .nav > li>#events, .navbar-inverse .nav>li>#events:focus {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
     color: #fff;
 }
-.navbar-inverse .nav > li>#media:hover, .navbar-inverse .nav>li>#media:focus:hover {
+.navbar-inverse .nav > li>#events:hover, .navbar-inverse .nav>li>#events:focus:hover {
     color: #B21908;
     transition: all 0.45s ease 0s;
 }
@@ -101,26 +101,26 @@ a:focus {
     color: grey;
     transition: all 0.45s ease 0s;
 }
-.navbar-inverse .nav > li>#bio:hover, .navbar-inverse .nav>li>#bio:focus:hover {
+.navbar-inverse .nav > li>#filmsaff:hover, .navbar-inverse .nav>li>#filmsaff:focus:hover {
     color: #B21908;
 }
-.navbar-inverse .nav > li.active>#bio, .navbar-inverse .nav>li.active>#bio:focus {
+.navbar-inverse .nav > li.active>#filmsaff, .navbar-inverse .nav>li.active>#filmsaff:focus {
     color: #B21908!important;
     background-color: transparent;
     transition: all 0.45s ease 0s;
 }
-.navbar-inverse .nav > li>#show:hover, .navbar-inverse .nav>li>#show:focus:hover {
+.navbar-inverse .nav > li>#resa:hover, .navbar-inverse .nav>li>#resa:focus:hover {
     color: #B21908;
 }
-.navbar-inverse .nav > li.active>#show, .navbar-inverse .nav>li.active>#show:focus {
+.navbar-inverse .nav > li.active>#resa, .navbar-inverse .nav>li.active>#resa:focus {
     color: #B21908!important;
     background-color: transparent;
     transition: all 0.55s ease 0s;
 }
-.navbar-inverse .nav > li>#media:hover, .navbar-inverse .nav>li>#media:focus:hover {
+.navbar-inverse .nav > li>#events:hover, .navbar-inverse .nav>li>#events:focus:hover {
     color: #B21908;
 }
-.navbar-inverse .nav > li.active>#media, .navbar-inverse .nav>li.active>#media:focus {
+.navbar-inverse .nav > li.active>#events, .navbar-inverse .nav>li.active>#events:focus {
     color: #B21908!important;
     background-color: transparent;
     transition: all 0.45s ease 0s;
@@ -138,15 +138,27 @@ a:focus {
                                         Carousel
 =============================================================================*/
  #waterwheel-carousel {
-     width: auto;
+     /*width: auto;
      margin:0;
     /*width: 200px;
     height: 150px;*/
-    display: relative;
+    /*display: relative;*/
+
+
+  width:200px;
+  height:300px;
+  position:relative;
+  clear:both;
+  /*overflow:hidSden;*/
+  margin:0 auto;
+
   }
   #waterwheel-carousel img {
     display: hidden; /* hide images until carousel prepares them */
-    cursor: pointer; /* not needed if you wrap carousel items in links */*/
+    /*cursor: pointer; /* not needed if you wrap carousel items in links */*/
+    width: 400px;
+    height: 300px;
+    margin-top: 100px;
   }
 
 
@@ -195,7 +207,7 @@ footer {
 .rightSideInfo {
     float: right;
     display: inline-block;
-    margin-top: 200px;
+    margin-top: 108px;
     position : fixed;
     border-radius: 6px;
     background-color: #EEE;
@@ -204,22 +216,25 @@ footer {
     padding-bottom: 20px;
     padding-top: 10px;
 }
-
 .accordiancontent {
     padding-left: 10px;
     padding-right: 10px;
     text-align: justify;
     font-size: 1.5em;
 }
-#accordian li {
+#accordian li{
     list-style-type: none;
     padding-bottom: 20px;
 }
-#accordian h3 {
-    padding-top: 15px;
-    padding-bottom: 3px;
+#accordian h3{
     text-align: center;
-    border-top: 1px solid #C7C7C7;
+    border-bottom: 1px solid #C7C7C7;
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+#accordian h3:hover{
+    font-weight: bold;
+    background-color: #EEDCEE;
 }
 
 

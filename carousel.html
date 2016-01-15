@@ -63,15 +63,15 @@
     <section class="container">
         <!-- carousel entrer -->
         <article class="row">
-<div id ="waterwheel-carousel">
-<div class="col-xs-12 col-sm-9 col-md-9 col-lg-7 col-lg-offset-1">
-    <img src="img/affiche1.jpg" alt=""/>
-    <img src="img/affiche2.jpg" alt=""/>
-    <img src="img/affiche3.jpg" alt=""/>
-    <img src="img/affiche4.jpg" alt=""/>
-    <img src="img/affiche5.jpg" alt=""/>
-    <img src="img/affiche6.jpg" alt=""/>
-</div>
+    <div class="col-xs-12 col-sm-9 col-md-12 col-lg-7 col-lg-offset-1">
+<ul id ="waterwheel-carousel">
+    <li><img src="img/affiche1.jpg" alt=""/></li>
+    <li><img src="img/affiche2.jpg" alt=""/></li>
+    <li><img src="img/affiche3.jpg" alt=""/></li>
+    <li><img src="img/affiche4.jpg" alt=""/></li>
+    <li><img src="img/affiche5.jpg" alt=""/></li>
+    <!-- <img src="img/affiche6.jpg" alt=""/> -->
+</ul>
 </div>
 </article>
         <!-- carousel fin -->
@@ -160,15 +160,23 @@
     <script src="js/main.js"></script>
     <!-- < script carousel -->
         <script>
-        $(document).ready(function () {
-          $("#waterwheel-carousel").waterwheelCarousel({
-            horizon: 110,
+     $(document).ready(function () {
+        $("#waterwheel-carousel").waterwheelCarousel({
+            horizon: 100,
             horizonOffset: -50,
             horizonOffsetMultiplier: .7,
-            separation: 150,
-            edgeFadeEnabled: true
-        });
-        });
+            separation: 200,
+            edgeFadeEnabled: true,
+            });
+            });
+
+  //       $(function(){
+  //    setInterval(function(){
+  //       $("#waterwheel-carousel ul").animate({marginLeft:-350},800,function(){
+  //          $(this).css({marginLeft:0}).find("li:last").after($(this).find("li:first"));
+  //       })
+  //    }, 3500);
+  // });
         </script>
         <!-- fin script carousel -->
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
