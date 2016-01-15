@@ -1,9 +1,12 @@
 /*===================================================================================
                             général
 ===================================================================================*/
-
+* {
+    box-sizing: border-box;
+}
 body {
     font-size: 62.5%;
+    padding-top: 50px;
 }
 h1 {
     padding-top: 10px;
@@ -17,12 +20,16 @@ h5 {
 }
 a {
     color: #333;
-    text-decoration: none
+    text-decoration: none;
 }
 
 /*===================================================================================
                             Navbar
 ===================================================================================*/
+
+a #title {
+    text-align: center;
+}
 nav div {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -137,29 +144,25 @@ a:focus {
 /*=============================================================================
                                         Carousel
 =============================================================================*/
+
+
+
+
  #waterwheel-carousel {
-     /*width: auto;
-     margin:0;
-    /*width: 200px;
-    height: 150px;*/
-    /*display: relative;*/
+width: 800px ;
+height: 420px;
+display: relative;
+margin-left: auto;
+margin-right: auto;
+}
 
-
-  width:200px;
-  height:300px;
-  position:relative;
-  clear:both;
-  /*overflow:hidSden;*/
-  margin:0 auto;
-
-  }
-  #waterwheel-carousel img {
-    display: hidden; /* hide images until carousel prepares them */
-    /*cursor: pointer; /* not needed if you wrap carousel items in links */*/
-    width: 400px;
-    height: 300px;
-    margin-top: 100px;
-  }
+#waterwheel-carousel img {
+width: 300px;
+height: 400px;
+display: hidden; /* hide images until carousel prepares them */
+cursor: pointer; /* not needed if you wrap carousel items in links */
+margin-top: 100px;
+}
 
 
 /*===================================================================================
@@ -169,15 +172,20 @@ a:focus {
 footer {
     background-color: black;
     color: white;
-    position: fixed;
     bottom: 0;
     width: 100%;
+    position: relative;
+    margin-top: auto;
+}
+footer h5 a:hover{
+    text-decoration: none;
+    font-weight: bold;
 }
 .btn-social {
     display: inline-block;
     width: 50px;
     height: 50px;
-    border: 2px solid #fff;
+    border: 2px solid #333;
     border-radius: 100%;
     text-align: center;
     font-size: 20px;
@@ -201,14 +209,14 @@ footer {
     margin-top: 110px;
     display: inline-block;
 }
+
 /*===================================================================================
                             aside
 ===================================================================================*/
+
 .rightSideInfo {
-    float: right;
     display: inline-block;
     margin-top: 108px;
-    position : fixed;
     border-radius: 6px;
     background-color: #EEE;
 }
@@ -216,23 +224,47 @@ footer {
     padding-bottom: 20px;
     padding-top: 10px;
 }
-.accordiancontent {
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: justify;
-    font-size: 1.5em;
+.accordion li {
+    margin-left: -38px;
 }
-#accordian li{
+.description {
+    margin: 1em auto 2.25em;
+}
+.inner {
+    padding-left: 1em;
+    overflow: hidden;
+    display: none;
+}
+li {
+    margin: .5em 0;
     list-style-type: none;
-    padding-bottom: 20px;
 }
-#accordian h3{
-    text-align: center;
-    border-bottom: 1px solid #C7C7C7;
-    padding-top: 10px;
-    padding-bottom: 3px;
+.toggle {
+    width: 100%;
+    display: block;
+    background: rgba(0, 0, 0, 0.78);
+    color: #fefefe;
+    padding: .75em;
+    border-radius: 0.15em;
+    transition: background .3s ease;
 }
-#accordian h3:hover{
-    font-weight: bold;
-    background-color: #EEDCEE;
+.toggle:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+.accordion a {
+    font-size: 1.5em;
+    text-decoration: none;
+}
+.inner li {
+    font-size: 1.2em;
+    text-decoration: none;
+}
+/*==============================================================================
+                                reservation
+==============================================================================*/
+.form-horizontal {
+margin-top: 8%;
+margin-bottom: 15%;
+
+
 }

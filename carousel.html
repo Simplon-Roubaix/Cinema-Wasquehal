@@ -65,11 +65,11 @@
         <article class="row">
     <div class="col-xs-12 col-sm-9 col-md-12 col-lg-7 col-lg-offset-1">
 <ul id ="waterwheel-carousel">
-    <li><img src="img/affiche1.jpg" alt=""/></li>
-    <li><img src="img/affiche2.jpg" alt=""/></li>
-    <li><img src="img/affiche3.jpg" alt=""/></li>
-    <li><img src="img/affiche4.jpg" alt=""/></li>
-    <li><img src="img/affiche5.jpg" alt=""/></li>
+    <li><a href="films.html"><img src="img/affiche1.jpg" alt=""/></a></li>
+    <li><a href="evenements.html"><img src="img/affiche2.jpg" alt=""/></a></li>
+    <li><a href="pratique.html"><img src="img/affiche3.jpg" alt=""/></a></li>
+    <li><a href="presentation.html"><img src="img/affiche4.jpg" alt=""/></a></li>
+    <li><a href="reservation.html"><img src="img/affiche5.jpg" alt=""/></a></li>
     <!-- <img src="img/affiche6.jpg" alt=""/> -->
 </ul>
 </div>
@@ -162,13 +162,31 @@
         <script>
      $(document).ready(function () {
         $("#waterwheel-carousel").waterwheelCarousel({
-            horizon: 100,
+            autoPlay : 1500,
             horizonOffset: -50,
-            horizonOffsetMultiplier: .7,
+            horizonOffsetMultiplier: 1,
+            linkHandling: 2,
             separation: 200,
-            edgeFadeEnabled: true,
-            });
-            });
+            activeClassName: "carousel-center",
+            opacityMultiplier: 1,
+            edgeFadeEnabled: true
+        });
+    });
+        // {
+        //     clickedCenter: function($clickedItem) {
+        //       // $clickedItem is a jQuery wrapped object describing the image that was clicked.
+        //       var imageUrl = $clickedItem.attr('src');
+        //       alert('The center image was just clicked. The URL of the image is: ' + imageUrl);
+        //   }},{
+        //     movedToCenter: function($newCenterItem) {
+        //       // $newCenterItem is a jQuery wrapped object describing the image that was clicked.
+        //       var imageID = $newCenterItem.attr('id'); // Get the HTML element "id" for this image. Let's say it's "tigerpicture"
+        //       // Now that we have the ID of the image, we can use jQuery to show the content corresponding to the tigerpicture.
+        //       $('#'+imageID+'-information').show(); // this will show the HTML element with id of "tigerpicture-information" on your site.
+        // }
+        //     }
+
+
 
   //       $(function(){
   //    setInterval(function(){
