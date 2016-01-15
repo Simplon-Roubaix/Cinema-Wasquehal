@@ -11,3 +11,10 @@ $(document).ready(function(){
 	})
 })
 //Fin menu accordéon
+$('#formulaire').quickselect({
+		activeButtonClass: 'btn-primary active',
+		breakOutAll: true,
+		buttonClass: 'btn btn-default',
+		selectDefaultText: 'Other',
+		wrapperClass: 'btn-group'
+	});
