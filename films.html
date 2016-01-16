@@ -82,7 +82,7 @@
                                <div class="col-md-7 col-lg-7">
                                     <h1 id="title1">Votre prochain film à l'affiche</h1>
                               </div>
-                                    <div class="row">
+                              <div class="row">
                                         <div class="col-md-6">
                                               <hr>
                                               <h3>Synopsis</h3>
@@ -90,23 +90,35 @@
                                               <p id="overview1">Synopsis du prochain film.</p>
                                         </div>
                                         <div class="col-md-6">
-                                            <iframe width="427" height="250"
-                                                src="https://www.youtube.com/embed/Ssd3FKVOsnw" frameborder="0" allowfullscreen>
+                                            <iframe id="video1" width="427" height="250"
+                                                src="" frameborder="0" allowfullscreen>
                                             </iframe>
                                         </div>
-                                    </div>
+                              </div>
                            </div>
                         </article>
                         <!-- / Presentation FILM 1-->
                         <!--Presentation FILM 2-->
                         <article id="film2" class="jumbotron">
-
                            <div class="row">
                                <div class="col-md-4">
-                                   <img class="img-responsive thumbnail" src="img/affiche2.jpg" alt="">
+                                   <img id="aff_film2" class="img-responsive thumbnail" src="" alt="affiche du film 2">
                                </div>
                                <div class="col-md-6">
-                                    <h2>Le film suivant</h2>
+                                    <h2 id="title2">Le film suivant</h2>
+                                </div>
+                                <div class="row">
+                                          <div class="col-md-6">
+                                                <hr>
+                                                <h3>Synopsis</h3>
+                                                <hr>
+                                                <p id="overview2">Synopsis du prochain film.</p>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <iframe id="video2" width="427" height="250"
+                                                  src="" frameborder="0" allowfullscreen>
+                                              </iframe>
+                                          </div>
                                 </div>
                             </div>
                         </article>
@@ -115,17 +127,32 @@
                         <article id="film3"  class="jumbotron">
                             <div class="row">
                                <div class="col-md-4">
-                                   <img class="img-responsive" src="img/affiche3.jpg" alt="">
+                                   <img id="aff_film3" class="img-responsive" src="img/affiche3.jpg" alt="affiche du film 3">
                                </div>
                                <div class="col-md-6">
-                                    <h2>Le film suivant d'apres</h2>
+                                    <h2 id="title3">Le film suivant d'apres</h2>
+                                </div>
+                                <div class="row">
+                                          <div class="col-md-6">
+                                                <hr>
+                                                <h3>Synopsis</h3>
+                                                <hr>
+                                                <p id="overview3">Synopsis du prochain film.</p>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <iframe id="video3" width="427" height="250"
+                                                  src="" frameborder="0" allowfullscreen>
+                                              </iframe>
+                                          </div>
                                 </div>
                             </div>
                         </article>
-                        <article id="film4"><h2>Le film suivant et d'apres apres!!</h2></article>
+                        <article id="film4"  class="jumbotron"><h2>Le film suivant et d'apres apres!!</h2></article>
                     </section>
                     <aside class="col-md-3 col-lg-3 jumbotron">
                           menu aside
+                          <!-- bouton temporaire -->
+                          <button id="charger" onclick="showUsersInfo()">Charger et traiter les données</button>
                     </aside>
                 </section>
           </section> <!-- section main a droite du logo -->
@@ -164,7 +191,7 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
+    <script src="js/gereFilm.js"></script>
 
 </body>
 
