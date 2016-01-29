@@ -28,6 +28,26 @@ $(document).ready(function () {
        activeClassName: "carousel-center",
        opacityMultiplier: 1,
        edgeFadeEnabled: true
+
+
+
+
+
+
+
+
+
    });
 });
 //end of carrousel
+
+
+//reservation manip dom pour afficher tarif prévisionel
+
+
+var nbPlace= document.getElementById("bla");
+// this.form.elements['selectbasic'].options[this.form.elements['selectbasic'].selectedIndex].value;
+
+var result =nbPlace * 5;
+
+nbPlace.textContent= "result"  ;
