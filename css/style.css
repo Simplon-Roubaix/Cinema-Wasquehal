@@ -157,12 +157,11 @@ a:focus {
 /*=============================================================================
                                         Carousel
 =============================================================================*/
-
-
-
-
+.carousel {
+    margin-right: 110px;
+}
  #waterwheel-carousel {
-width: 800px ;
+width: 560px ;
 height: 420px;
 display: relative;
 margin-left: auto;
@@ -248,6 +247,7 @@ margin-top: 40px;
     transform: translateX(-20px);
     -webkit-transition: all 400ms ease;
     transition: all 400ms ease;
+    text-align: right;
 }
 .accordionp ul li div a h2 {
     font-family: Montserrat, sans-serif;
@@ -262,35 +262,36 @@ margin-top: 40px;
     font-size: 13.5px;
     width: 300px;
     height: 400px;
+    text-align: right;
 }
 .accordionp ul li:nth-child(1) {
     background-image: url("../img/affiche1.jpg");
-    background-size: 260px 300px
+    background-size: 260px 300px;
 
 }
 .accordionp ul li:nth-child(2) {
     background-image: url("../img/affiche2.jpg");
-    background-size: 260px 300px
+    background-size: 260px 300px;
 
 }
 .accordionp ul li:nth-child(3) {
     background-image: url("../img/affiche3.jpg");
-    background-size: 260px 300px
+    background-size: 260px 300px;
 
 }
 .accordionp ul li:nth-child(4) {
     background-image: url("../img/affiche4.jpg");
-    background-size: 260px 300px
+    background-size: 260px 300px;
 
 }
 .accordionp ul li:nth-child(5) {
     background-image: url("../img/affiche5.jpg");
-    background-size: 260px 300px
+    background-size: 260px 300px;
 
 }
 .accordionp ul li:nth-child(6) {
     background-image: url("../img/affiche6.jpg");
-    background-size: 260px 300px
+    background-size: 260px 300px;
 
 }
 .accordionp ul:hover li {
