@@ -1,0 +1,38 @@
+{
+  "films1": {
+        "poster_path":"img/affiche1.jpg",
+        "adult":false,
+        "overview":"Dans une galaxie lointaine, très lointaine, un nouvel épisode de la saga Star Wars, 30 ans après les événements du Retour du Jedi.",
+        "release_date":"2015-12-18",
+        "genre_ids":[28,12,878,14],
+        "id":140607,
+        "original_title":"Star Wars: The Force Awakens",
+        "original_language":"en",
+        "title":"Star Wars, épisode VII - Le Réveil de la Force",
+        "backdrop_path":"\/njv65RTipNSTozFLuF85jL0bcQe.jpg",
+        "popularity":47.970708,
+        "vote_count":2202,
+        "video":false,
+        "vote_average":7.91}
+        ,
+
+  "film2": {
+        "poster_path":"img/affiche2.jpg",
+        "adult":false,
+        "overview":"Le Grand Déluge arrive : la fin du monde est proche. Heureusement, une Arche a été construite par Noé pour accueillir tous les animaux. Tous… sauf Dave et son fils Finny, qui appartiennent à la race des Nestrians – une espèce animale assez bizarre, maladroite, pas très bien intégrée, et que personne n’a jugé utile d’inviter à bord de l’Arche…",
+        "release_date":"2015-07-16",
+        "genre_ids":[16],
+        "id":326215,
+        "original_title":"Ooops! Noah is Gone...",
+        "original_language":"en",
+        "title":"Oups ! J’ai raté l’arche…",
+        "backdrop_path":"\/aVcpJiLFpvPkoHgE54R4FaI40If.jpg",
+        "popularity":1.825026,
+        "vote_count":21,
+        "video":false,
+        "vote_average":5.71},
+  "film3": {
+        "poster_path":"img/affiche3.jpg","adult":false,"overview":"Antoine ressemble aux héros des films dont il compose la musique. Il a du charme, du succès, et traverse la vie avec autant d’humour que de légèreté. Lorsqu’il part en Inde travailler sur une version très originale de Roméo et Juliette, il rencontre Anna, une femme qui ne lui ressemble en rien, mais qui l’attire plus que tout. Ensemble, ils vont vivre une incroyable aventure…","release_date":"2015-12-09","genre_ids":[35],"id":352025,"original_title":"Un plus une","original_language":"fr","title":"Un plus une","backdrop_path":"\/4teaZECmWzmKIL77h4gpikr66SK.jpg","popularity":1.43213,"vote_count":10,
+          "video":"https://www.youtube.com/embed/A_ZdytEf6D8",
+          "vote_average":6.1}
+  }

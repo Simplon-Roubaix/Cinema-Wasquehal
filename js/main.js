@@ -21,7 +21,7 @@ $('.toggle').click(function(e) {
 $(document).ready(function () {
    $("#waterwheel-carousel").waterwheelCarousel({
        autoPlay : 1500,
-       horizonOffset: -50,
+       horizonOffset: -20,
        horizonOffsetMultiplier: 1,
        linkHandling: 2,
        separation: 200,

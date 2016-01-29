@@ -54,10 +54,20 @@ a:focus {
     color: #fff;
     transition: all 1s ease 0.5s;
 }
-.navbar-inverse .navbar-header .navbar-brand:hover, .navbar-inverse .navbar-header .navbar-brand:focus {
+/*.navbar-inverse .navbar-brand >#title, .navbar-inverse .navbar-brand>#title:focus {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+}*/
+.navbar-inverse .navbar-brand >#title:hover, .navbar-inverse .navbar-brand>#title:focus:hover {
+    color: #B21908;
+    transition: all 0.45s ease 0s;
+}
+/*.navbar-inverse .navbar-header .navbar-brand:hover, .navbar-inverse .navbar-header .navbar-brand:focus {
     animation: 1s multicolor;
     -webkit-animation: 1s multicolor;
-}
+}*/
 .navbar-inverse .nav > li>#presentation, .navbar-inverse .nav>li>#presentation:focus {
     text-transform: uppercase;
     font-size: 13px;
@@ -161,7 +171,7 @@ width: 300px;
 height: 400px;
 display: hidden; /* hide images until carousel prepares them */
 cursor: pointer; /* not needed if you wrap carousel items in links */
-margin-top: 100px;
+margin-top: 40px;
 }
 
 
@@ -224,9 +234,6 @@ footer h5 a:hover{
     padding-bottom: 20px;
     padding-top: 10px;
 }
-.accordion li {
-    margin-left: 5px;
-}
 .description {
     margin: 1em auto 2.25em;
 }
@@ -234,9 +241,6 @@ footer h5 a:hover{
     padding-left: 1em;
     overflow: hidden;
     display: none;
-}
-.show {
-    /*display: block;*/
 }
 li {
     margin: .5em 0;
