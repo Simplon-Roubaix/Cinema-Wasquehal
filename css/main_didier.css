@@ -13,9 +13,9 @@
   height: 32em;
   width: auto;
   background-color: ligthgray;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
+  padding-top: 1.88em;
+  padding-bottom: 1.88em;
+  margin-bottom: 1.88em;
   color: inherit;
   background-color: #eee;
   border-radius: 0.4em;
@@ -28,5 +28,5 @@ article#film1 .jumbotron  {padding-left: 0 !important;}
 	padding-left: 0;
 }
 .img-responsive {
-  max-height: 600px;
+  max-height: 50em;
 }
