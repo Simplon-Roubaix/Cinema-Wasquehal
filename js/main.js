@@ -61,14 +61,3 @@ coutEuroMin.textContent= result2  ;
 
 }
 form.addEventListener("change", calculPrix);
-
-
-    jQuery.datetimepicker.setLocale('fr');
-    jQuery('#choixSeance').datetimepicker({
-
-         datepicker:true;
-
- allowTimes:[
-  '14:00', '16:00', '16:30', '17:00', '18:00', '19:00', '19:30', '23:00'];
-disabledDates: [];
-    });
