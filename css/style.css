@@ -420,7 +420,10 @@ footer h5 a:hover{
 ==============================================================================*/
 .form-horizontal {
 margin-top: 8%;
-margin-bottom: 15%;
+
+}
+#tarif{
+font-size: 1.2em;
 
 
 }

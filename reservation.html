@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/quickselect.css" >
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.datetimepicker.css" type="text/css">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -33,7 +34,7 @@
                       <span class="icon-bar"></span>
                   </button>
                   <a class="navbar-brand page-scroll" href="index.html">
-                      <h1>Cinéma Gérard Philippe</h1>
+                      <h1 id="title">Cinéma Gérard Philippe</h1>
                   </a>
               </div>
 
@@ -135,7 +136,9 @@
       <option value="8">8</option>
       <option value="9">9</option>
     </select>
-      <p>A partir de 10 places pensez à prendre contact pour des tarifs de groupes</p>
+      <p>Pour toutes ces places, prévoyez <span id="bla"> </span> € au maximum et <span id="bla2"
+      > </span> € pour des places au tarif réduit.</p>
+      <p>A partir de 10 places pensez à prendre contact pour des tarifs de groupes.</p>
   </div>
 </div>
 
@@ -188,6 +191,10 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/quickselect.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.datetimepicker.full.min.js"></script>
+
+  
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -205,9 +212,15 @@
             r.parentNode.insertBefore(e, r)
         }(window, document, 'script', 'ga'));
         ga('create', 'UA-XXXXX-X', 'auto');
-        ga('send', 'pageview');}
+        ga('send', 'pageview');
+
+
+
+
+
 
     </script>
+    sœ
 
 </body>
 
