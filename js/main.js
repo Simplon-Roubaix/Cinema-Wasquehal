@@ -24,7 +24,7 @@ $(document).ready(function () {
        horizonOffset: -20,
        horizonOffsetMultiplier: 1,
        linkHandling: 2,
-       separation: 200,
+       separation: 150,
        activeClassName: "carousel-center",
        opacityMultiplier: 1,
        edgeFadeEnabled: true
