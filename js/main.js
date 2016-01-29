@@ -42,6 +42,18 @@ $(document).ready(function () {
 //end of carrousel
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 //reservation manip dom pour afficher tarif prévisionel
 
 var form = document.getElementById("nbrePlace");
@@ -61,3 +73,8 @@ coutEuroMin.textContent= result2  ;
 
 }
 form.addEventListener("change", calculPrix);
+
+
+
+
+// datetime picker
