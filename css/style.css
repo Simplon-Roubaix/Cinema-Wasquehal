@@ -7,6 +7,7 @@
 body {
     font-size: 62.5%;
     padding-top: 50px;
+    width: 100%;
 }
 h1 {
     padding-top: 10px;
@@ -22,7 +23,9 @@ a {
     color: #333;
     text-decoration: none;
 }
-
+.row {
+    width: 100%;
+}
 /*===================================================================================
                             Navbar
 ===================================================================================*/
@@ -167,13 +170,155 @@ margin-right: auto;
 }
 
 #waterwheel-carousel img {
-width: 300px;
-height: 400px;
-display: hidden; /* hide images until carousel prepares them */
-cursor: pointer; /* not needed if you wrap carousel items in links */
+width: 200px;
+height: 300px;
+display: hidden;
+cursor: pointer;
 margin-top: 40px;
 }
+#waterwheel-carousel li {
+    list-style-type: none;
+}
+/*=============================================================================
+                            horizontal accordion
+=============================================================================*/
+.altmenu {
+    /*width: 100%;*/
+    padding-top: 30px;
+    padding-bottom: 100px;
+    background-color: #333;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.accordionp {
+    /*width: 100%;*/
+    max-width: 800px;
+    height: 360px;
+    overflow: hidden;
+    margin-top: 100px;
+}
+.accordionp ul {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+}
+.accordionp ul li {
+    display: table-cell;
+    vertical-align: bottom;
+    position: relative;
+    width: 16.666%;
+    height: 300px;
+    background-repeat: no-repeat;
+    /*background-position: center center;*/
+    transition: all 500ms ease;
+}
+.accordionp ul li div {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+.accordionp ul li div a {
+    display: block;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    vertical-align: bottom;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    font-family: Open Sans, sans-serif;
+    transition: all 200ms ease;
+}
+.accordionp ul li div a * {
+    opacity: 0;
+    margin: 0;
+    width: 100%;
+    text-overflow: ellipsis;
+    position: relative;
+    z-index: 5;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+.accordionp ul li div a h2 {
+    font-family: Montserrat, sans-serif;
+    text-overflow: clip;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    top: 160px;
+}
+.accordionp ul li div a p {
+    top: 160px;
+    font-size: 13.5px;
+    width: 300px;
+    height: 400px;
+}
+.accordionp ul li:nth-child(1) {
+    background-image: url("../img/affiche1.jpg");
+    background-size: 260px 300px
 
+}
+.accordionp ul li:nth-child(2) {
+    background-image: url("../img/affiche2.jpg");
+    background-size: 260px 300px
+
+}
+.accordionp ul li:nth-child(3) {
+    background-image: url("../img/affiche3.jpg");
+    background-size: 260px 300px
+
+}
+.accordionp ul li:nth-child(4) {
+    background-image: url("../img/affiche4.jpg");
+    background-size: 260px 300px
+
+}
+.accordionp ul li:nth-child(5) {
+    background-image: url("../img/affiche5.jpg");
+    background-size: 260px 300px
+
+}
+.accordionp ul li:nth-child(6) {
+    background-image: url("../img/affiche6.jpg");
+    background-size: 260px 300px
+
+}
+.accordionp ul:hover li {
+    width: 8%;
+}
+.accordionp ul:hover li:hover {
+    width: 60%;
+}
+.accordionp ul:hover li:hover a {
+    background: rgba(0, 0, 0, 0.4);
+}
+.accordionp ul:hover li:hover a * {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+@media screen and (max-width: 600px) {
+    .accordionp {
+        height: auto;
+    }
+    .accordionp ul li, .accordionp ul li:hover, .accordionp ul:hover li, .accordionp ul:hover li:hover {
+        position: relative;
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        -webkit-transition: none;
+        transition: none;
+    }
+}
 
 /*===================================================================================
                             footer
@@ -242,7 +387,7 @@ footer h5 a:hover{
     overflow: hidden;
     display: none;
 }
-li {
+.accordion li {
     margin: .5em 0;
     list-style-type: none;
 }
