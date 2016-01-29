@@ -44,10 +44,31 @@ $(document).ready(function () {
 
 //reservation manip dom pour afficher tarif prévisionel
 
+var form = document.getElementById("nbrePlace");
 
-var nbPlace= document.getElementById("bla");
-// this.form.elements['selectbasic'].options[this.form.elements['selectbasic'].selectedIndex].value;
 
-var result =nbPlace * 5;
+function calculPrix() {
+var nbPlace= form.selectedIndex;
+var coutEuro= document.getElementById("bla");
+var coutEuroMin= document.getElementById("bla2");
 
-nbPlace.textContent= "result"  ;
+
+var result1 = parseInt(nbPlace +1) * 5;
+var result2 = parseInt(nbPlace +1) * 4;
+
+coutEuro.textContent= result1  ;
+coutEuroMin.textContent= result2  ;
+
+}
+form.addEventListener("change", calculPrix);
+
+
+    jQuery.datetimepicker.setLocale('fr');
+    jQuery('#choixSeance').datetimepicker({
+
+         datepicker:true;
+
+ allowTimes:[
+  '14:00', '16:00', '16:30', '17:00', '18:00', '19:00', '19:30', '23:00'];
+disabledDates: [];
+    });
