@@ -15,6 +15,8 @@ $('.toggle').click(function(e) {
     }
 });
 //end new accordion
+
+
 //start carrousel
 $(document).ready(function () {
    $("#waterwheel-carousel").waterwheelCarousel({
@@ -26,6 +28,47 @@ $(document).ready(function () {
        activeClassName: "carousel-center",
        opacityMultiplier: 1,
        edgeFadeEnabled: true
+
+
+
+
+
+
+
+
+
    });
 });
 //end of carrousel
+
+
+//reservation manip dom pour afficher tarif prévisionel
+
+var form = document.getElementById("nbrePlace");
+
+
+function calculPrix() {
+var nbPlace= form.selectedIndex;
+var coutEuro= document.getElementById("bla");
+var coutEuroMin= document.getElementById("bla2");
+
+
+var result1 = parseInt(nbPlace +1) * 5;
+var result2 = parseInt(nbPlace +1) * 4;
+
+coutEuro.textContent= result1  ;
+coutEuroMin.textContent= result2  ;
+
+}
+form.addEventListener("change", calculPrix);
+
+
+    jQuery.datetimepicker.setLocale('fr');
+    jQuery('#choixSeance').datetimepicker({
+
+         datepicker:true;
+
+ allowTimes:[
+  '14:00', '16:00', '16:30', '17:00', '18:00', '19:00', '19:30', '23:00'];
+disabledDates: [];
+    });
