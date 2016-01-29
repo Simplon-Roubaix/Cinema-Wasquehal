@@ -30,3 +30,13 @@ article#film1 .jumbotron  {padding-left: 0 !important;}
 .img-responsive {
   max-height: 600px;
 }
+article#presentation .jumbotron  {padding-left: 0 !important;}
+.jumbotron p {font-size: 1.5em;}
+
+.container-fluid#presentation .jumbotron {
+	padding-right: 60px;
+	padding-left: 0;
+}
+.img-responsive {
+  max-height: 600px;
+}
