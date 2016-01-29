@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/quickselect.css" >
     <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/jquery.datetimepicker.css" type="text/css">
+    <link rel="stylesheet" src="css/jquery.datetimepicker.css" type="text/css">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -187,8 +187,20 @@
   <script src="js/bootstrap.js"></script>
   <script type="text/javascript" src="js/jquery.waterwheelCarousel.min.js"></script>
   <script src="js/plugins.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.datetimepicker.full.min.js"></script>
   <script src="js/main.js"></script>
 
+<script type="text/javascript">
+jQuery.datetimepicker.setLocale('fr');
+jQuery('#choixSeance').datetimepicker ({
+     datepicker:true;
+allowTimes:[
+'14:00', '16:00', '16:30', '17:00', '18:00', '19:00', '19:30', '23:00'];
+});
+
+
+</script>
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
       (function(b, o, i, l, e, r) {
@@ -206,6 +218,7 @@
       ga('create', 'UA-XXXXX-X', 'auto');
       ga('send', 'pageview');
   </script>
+
   </body>
 
   </html>
