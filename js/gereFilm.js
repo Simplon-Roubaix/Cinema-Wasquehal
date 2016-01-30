@@ -1,16 +1,15 @@
-function showUsersInfo(){
+document.addEventListener("DOMContentLoaded", function(event) {
+
+
   $.getJSON( "js/films.json", function( film ) {
     // Iteration sur les films
-
-    console.log(film);
       $.each( film, function( key, donnee ) {
           var ident = key;
-          console.log(key);
-         // Iteration sur les data d'un film
+             // Iteration sur les data d'un film
+             // ex : key = title et donnee = "nom du film"
             $.each( donnee, function( pkey, pdonnee ) {
               // $("<div>" + pkey + " = " + value + "</div>").appendTo( "#vue" );
               // Mon code:
-              console.log(key)
               switch (pkey) {
                 case "poster_path" :
                         $('#aff_'+key).attr('src',pdonnee);
@@ -32,4 +31,4 @@ function showUsersInfo(){
             // $("<div>___</div>").appendTo( "#vue" );
       });
   });
-}
+});
